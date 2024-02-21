@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-reset.css" />
+
+    <script src="https://unpkg.com/alwan/dist/js/alwan.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/alwan/dist/css/alwan.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Etch A Sketch</title>
+  </head>
+  <body>
+    <div class="title">Etch A Sketch</div>
+    <div id="drawing-panel"></div>
+    <div class="toolbox-container">
+      <div class="left">
+        <div id="color-picker"></div>
+        <div id="pen-button" class="button selected">Pen</div>
+        <div id="pencil-button" class="button">Pencil</div>
+        <div id="eraser-button" class="button">Eraser</div>
+      </div>
+      <div class="right">
+        <div class="slider">
+          <label for="size">10x10</label>
+          <input
+            type="range"
+            name="size"
+            id="size"
+            min="10"
+            max="150"
+            step="10"
+            value="10"
+          />
+        </div>
+        <div id="clear-button" class="button">Clear</div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>

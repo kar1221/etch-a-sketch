@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+* {
+  /* border: 1px solid black; /* */
+}
+
+body {
+  user-select: none;
+  background-color: #eeeeff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: "Indie Flower", sans-serif;
+  text-align: center;
+  color: #3f4450;
+  font-weight: 700;
+}
+
+#drawing-panel {
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: 70%;
+}
+
+#drawing-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.toolbox-container {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 0.8rem;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
+
+.toolbox-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.toolbox-container .button {
+  font-family: "Indie Flower", sans-serif;
+  font-weight: 800;
+  background-color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #3f4450;
+  transition:
+    background-color ease-in-out 0.2s,
+    color ease-in-out 0.2s;
+}
+
+.toolbox-container .button:hover,
+.toolbox-container .button.selected {
+  background-color: #3f4450;
+  color: white;
+}
+
+#color-picker {
+  border: 0;
+  outline: 1px solid white;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.6rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Indie Flower", sans-serif;
+  gap: 2rem;
+}
+
+.slider label {
+  font-size: 1.8rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+}
+
+#size {
+  -webkit-appearance: none;
+  background: #3f4450;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
+
+#size::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+}
