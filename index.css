@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
-* {
-  /* border: 1px solid black; /* */
-}
-
 body {
   user-select: none;
   background-color: #eeeeff;
@@ -37,8 +33,7 @@ body {
   flex-direction: column;
   padding: 1.3rem;
   border-radius: 1rem;
-  box-shadow:
-    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
@@ -58,8 +53,7 @@ body {
   align-items: center;
   width: 50%;
   padding: 0.8rem;
-  box-shadow:
-    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
@@ -79,9 +73,7 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   color: #3f4450;
-  transition:
-    background-color ease-in-out 0.2s,
-    color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
 }
 
 .toolbox-container .button:hover,
@@ -118,8 +110,7 @@ body {
   background: #3f4450;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow:
-    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
@@ -131,7 +122,6 @@ body {
   border-radius: 1rem;
   background: white;
   cursor: pointer;
-  box-shadow:
-    rgba(14, 30, 37, 0.12) 0 2px 4px 0,
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0,
     rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
