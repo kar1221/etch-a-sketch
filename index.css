@@ -26,9 +26,6 @@ body {
   aspect-ratio: 1 / 1;
   width: auto;
   height: 70%;
-}
-
-#drawing-panel {
   display: flex;
   flex-direction: column;
   padding: 1.3rem;
@@ -107,6 +104,7 @@ body {
 
 #size {
   -webkit-appearance: none;
+  appearance: none;
   background: #3f4450;
   border-radius: 1rem;
   overflow: hidden;
